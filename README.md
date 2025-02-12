@@ -5,5 +5,9 @@ A command line tool to generate Apex templates based on the Apex Enterprise Patt
 
 ### Linux
 ```bash
-curl -O https://github.com/wimvelzeboer/fflib-templates/tree/main/target/release/v0.1/sft
+curl -O https://github.com/wimvelzeboer/fflib-templates/releases/download/v0.1/sft
 ```
+
+### Windows
+
+[https://github.com/wimvelzeboer/fflib-templates/releases/download/v0.1/sft.exe](https://github.com/wimvelzeboer/fflib-templates/releases/download/v0.1/sft.exe)
