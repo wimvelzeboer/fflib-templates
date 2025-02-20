@@ -11,9 +11,16 @@ A command line tool to generate Apex templates based on the Apex Enterprise Patt
 
 ## Installation
 
-### Linux
+### Linux / 
 ```bash
-wget -o ~/.local/bin/sft https://github.com/wimvelzeboer/fflib-templates/releases/download/v0.1/sft 
+wget -o ~/.local/bin/sft https://github.com/wimvelzeboer/fflib-templates/releases/download/v0.1.2/sft
+chmod +x ~/.local/bin/sft
+```
+
+### MacOs / 
+```bash
+mkdir -p ~/.local/bin
+wget -o ~/.local/bin/sft https://github.com/wimvelzeboer/fflib-templates/releases/download/v0.1.2/sft.exe
 chmod +x ~/.local/bin/sft
 ```
 
