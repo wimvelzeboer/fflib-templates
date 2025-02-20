@@ -17,16 +17,9 @@ wget -o ~/.local/bin/sft https://github.com/wimvelzeboer/fflib-templates/release
 chmod +x ~/.local/bin/sft
 ```
 
-### MacOs / 
-```bash
-mkdir -p ~/.local/bin
-wget -o ~/.local/bin/sft https://github.com/wimvelzeboer/fflib-templates/releases/download/v0.1.2/sft.exe
-chmod +x ~/.local/bin/sft
-```
-
 ### Windows
 
-[https://github.com/wimvelzeboer/fflib-templates/releases/download/v0.1/sft.exe](https://github.com/wimvelzeboer/fflib-templates/releases/download/v0.1/sft.exe)
+[https://github.com/wimvelzeboer/fflib-templates/releases/download/v0.1.2/sft.exe](https://github.com/wimvelzeboer/fflib-templates/releases/download/v0.1.2/sft.exe)
 
 Download the file to a folder that is either added in the PATH or add the folder to it. 
 
