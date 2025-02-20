@@ -17,12 +17,12 @@ private class AccountsServiceTest
 		AccountsService.replaceWith(AccountsServiceImpl.class);
 		AccountsService.replaceWith(serviceMock);
 
-		final Id AccountsId = fflib_IDGenerator.generate(Schema.Account.SObjectType);
+		final Id accountsId = fflib_IDGenerator.generate(Schema.Account.SObjectType);
 
 		System.Test.startTest();
-		Boolean result = AccountsService.doSomething(new Set<Id> {AccountsId});
+		Boolean result = AccountsService.doSomething(new Set<Id> {accountsId});
 		System.Test.stopTest();
 
-		((IAccountsService) mocks.verify(serviceMock)).doSomething(new Set<Id> {AccountsId});
+		((IAccountsService) mocks.verify(serviceMock)).doSomething(new Set<Id> {accountsId});
 	}
 }

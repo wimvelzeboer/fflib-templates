@@ -1,7 +1,7 @@
 /**
  * AccountsService interface
  *
- * This service class is providing a single access point for high level business services functionality,
+ * This service class is providing a single access point for highlevel business services functionality,
  * every entry point (e.g. WebService, Trigger) should be able to invoke these service methods.
  * Therefore there are many method overloads, to support different entry points
  *
@@ -23,31 +23,31 @@ public interface IAccountsService
 	/**
 	 * Sample
 	 *
-	 * @param Accounts A List of Account records
+	 * @param accounts A List of Account records
 	 *
 	 * @return Returns Something
 	 */
-	Boolean doSomething(List<Account> Accounts);
+	Boolean doSomething(List<Account> accounts);
 
 	/**
 	 * Sample
 	 *
-	 * @param Accounts A domain with Account records
+	 * @param accounts A domain with Account records
 	 *
 	 * @return Returns Something
 	 *
-	 * @see	IAccounts{SUFFIX}
+	 * @see	IAccounts
 	 */
-	Boolean doSomething(IAccounts{SUFFIX} Accounts);
+	Boolean doSomething(IAccounts accounts);
 
 	/**
 	 * Sample
 	 *
-	 * @param Accounts A domain with Account records
+	 * @param accounts A domain with Account records
 	 * @param unitOfWork An instance of fflib_ISObjectUnitOfWork
 	 *
 	 * @return Returns Something
 	 */
-	Boolean doSomething(fflib_ISObjectUnitOfWork unitOfWork, IAccounts{SUFFIX} Accounts);
+	Boolean doSomething(fflib_ISObjectUnitOfWork unitOfWork, IAccounts accounts);
 }
  

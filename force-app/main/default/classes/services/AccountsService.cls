@@ -1,7 +1,7 @@
 /**
  * AccountsService class
  *
- * This service class is providing a single access point for highlevel business services functionality,
+ * This service class is providing a single access point for high level business services functionality,
  * every entry point (e.g. WebService, Trigger) should be able to invoke these service methods.
  * Therefore there are many method overloads, to support different entry points
  *
@@ -40,40 +40,40 @@ public with sharing class AccountsService
 	/**
 	 * Sample
 	 *
-	 * @param Accounts A List of Account records
+	 * @param accounts A List of Account records
 	 *
 	 * @return Returns Something
 	 */
-	public static Boolean doSomething(List<Account> Accounts)
+	public static Boolean doSomething(List<Account> accounts)
 	{
-		return newInstance().doSomething(Accounts);
+		return newInstance().doSomething(accounts);
 	}
 
 	/**
 	 * Sample
 	 *
-	 * @param Accounts A domain with Account records
+	 * @param accounts A domain with Account records
 	 *
 	 * @return Returns Something
 	 *
 	 * @see	IAccounts{SUFFIX}
 	 */
-	public static Boolean doSomething(IAccounts{SUFFIX} Accounts)
+	public static Boolean doSomething(IAccounts{SUFFIX} accounts)
 	{
-		return newInstance().doSomething(Accounts);
+		return newInstance().doSomething(accounts);
 	}
 
 	/**
 	 * Sample
 	 *
-	 * @param Accounts A domain with Account records
+	 * @param accounts A domain with Account records
 	 * @param unitOfWork An instance of fflib_ISObjectUnitOfWork
 	 *
 	 * @return Returns Something
 	 */
-	public static Boolean doSomething(fflib_ISObjectUnitOfWork unitOfWork, IAccounts{SUFFIX} Accounts)
+	public static Boolean doSomething(fflib_ISObjectUnitOfWork unitOfWork, IAccounts{SUFFIX} accounts)
 	{
-		return newInstance().doSomething(unitOfWork, Accounts);
+		return newInstance().doSomething(unitOfWork, accounts);
 	}
 
 	/**

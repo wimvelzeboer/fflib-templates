@@ -21,34 +21,34 @@ public inherited sharing class AccountsServiceImpl implements IAccountsService
 	 */
 	public Boolean doSomething(Id idSet)
 	{
-		return doSomething(Accounts{SUFFIX}.newInstance(idSet));
+		return doSomething(Accounts.newInstance(idSet));
 	}
 
 	/**
 	 * Sample
 	 *
-	 * @param Accounts A List of Account records
+	 * @param accounts A List of Account records
 	 *
 	 * @return Returns Something
 	 */
-	public Boolean doSomething(List<Account> Accounts)
+	public Boolean doSomething(List<Account> accounts)
 	{
-		return doSomething(Accounts{SUFFIX}.newInstance(Accounts));
+		return doSomething(Accounts.newInstance(accounts));
 	}
 
 	/**
 	 * Sample
 	 *
-	 * @param Accounts A domain with Account records
+	 * @param accounts A domain with Account records
 	 *
 	 * @return Returns Something
 	 *
-	 * @see	IAccounts{SUFFIX}
+	 * @see	IAccounts
 	 */
-	public Boolean doSomething(IAccounts{SUFFIX} Accounts)
+	public Boolean doSomething(IAccounts accounts)
 	{
-	    fflib_ISObjectUnitOfWork = new fflib_SObjectUnitOfWork(List<SObjectType> {Account});
-	    Boolean result = doSomething(unitOfWork, Accounts);
+	    fflib_ISObjectUnitOfWork unitOfWork = new fflib_SObjectUnitOfWork(List<SObjectType> {Account});
+	    Boolean result = doSomething(unitOfWork, accounts);
 	    unitOfWork.commitWork();
 		return result;
 	}
@@ -56,12 +56,12 @@ public inherited sharing class AccountsServiceImpl implements IAccountsService
 	/**
 	 * Sample
 	 *
-	 * @param Accounts A domain with Account records
+	 * @param accounts A domain with Account records
 	 * @param unitOfWork An instance of fflib_ISObjectUnitOfWork
 	 *
 	 * @return Returns Something
 	 */
-	public Boolean doSomething(fflib_ISObjectUnitOfWork unitOfWork, IAccounts{SUFFIX} Accounts)
+	public Boolean doSomething(fflib_ISObjectUnitOfWork unitOfWork, IAccounts{SUFFIX} accounts)
 	{
 		return true;
 	}
